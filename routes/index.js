@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   var config = {
     username: 'mitsuru1397',
     password: 'App2016web2',
-    server:  '2016web2-mitsuru1397.database.windows.net',
+    server:  '2016web2-13-mitsuru1397.database.windows.net',
     options: {encrypt:true, database: '2016web2-13'}
   };
   var connection = new Connection(config);
