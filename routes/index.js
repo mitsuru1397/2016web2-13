@@ -44,13 +44,13 @@ router.get('/', function(req, res, next) {
       });
     });
     
-    request.on('doneProc', function(rowCount, more, returnStatus, rows)
+    request.on('doneProc', function(rowCount, more, returnStatus, rows){
          result += "</table>";
          res.render('index', {title:"はじめての DB", message:result});
   });
   
   conection.exeSql(request);
-}
+  }
 });
 
 module.exports = router;
